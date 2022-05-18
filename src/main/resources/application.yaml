@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: reactive-app
+  data:
+    mongodb:
+      #authentication-database: admin
+      username: root
+      password:
+      database: reactive
+      port: 27017
+      host: localhost
+
+
+jwt:
+  secretKey: $argon2id$v=19$m=256,t=3,p=5$ZjB6dXc4OXJqbTkwMDAwMA$d7zq5B+aVKmByG7Rv/T+zNTxqaK9TkMsdQ
+  timeMs: 1800000 # 1000millseg*60s*30=30mins
